@@ -2,16 +2,16 @@ class GmailRo < Formula
   desc "Read-only command-line interface for Gmail"
   homepage "https://github.com/open-cli-collective/gmail-ro"
   license "MIT"
-  version "1.0.10"
+  version "1.0.11"
 
   on_macos do
     on_arm do
       url "https://github.com/open-cli-collective/gmail-ro/releases/download/v#{version}/gmail-ro_v#{version}_darwin_arm64.tar.gz"
-      sha256 "91e34acd8322a3e072fcd1d71f297395eb77d34c7bfeca4bbf359ec1020ad90b"
+      sha256 "7ec28cf825a6b9b1cc85549a28129f014a6b710dd76d5ef4ef16f1f07ca0d6aa"
     end
     on_intel do
       url "https://github.com/open-cli-collective/gmail-ro/releases/download/v#{version}/gmail-ro_v#{version}_darwin_amd64.tar.gz"
-      sha256 "2edf836a428c8890ecdfe68791e70566e377e4c0f5040779e03f3a4bfe3c7b23"
+      sha256 "94bb5b62bac0a45b428346666e8ef86c4f4af279cdaaebbe0d2f06f3cbcca8c5"
     end
   end
 
