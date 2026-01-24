@@ -2,29 +2,29 @@ cask "google-readonly" do
   name "google-readonly"
   desc "Read-only command-line interface for Google services"
   homepage "https://github.com/open-cli-collective/google-readonly"
-  version "1.0.8"
+  version "1.0.9"
 
   binary "gro"
 
   on_macos do
     on_arm do
       url "https://github.com/open-cli-collective/google-readonly/releases/download/v#{version}/gro_v#{version}_darwin_arm64.tar.gz"
-      sha256 "80398be0181fb51f929e94bcb42294703c74e7c43ba06b37cb9556eaf61044be"
+      sha256 "354fdc45b8fc4808e90a1e172ee04bd2ee1e0367f7d708d7d84507520bef30c3"
     end
     on_intel do
       url "https://github.com/open-cli-collective/google-readonly/releases/download/v#{version}/gro_v#{version}_darwin_amd64.tar.gz"
-      sha256 "48fd9560c8e57d4470abb3c33322928074802287945f5a977d6c5c4fe64676c8"
+      sha256 "4ed45a8bf03286265655148b1c3bb29d19c9f42585dd56c1f3c9ac113a62d30b"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/open-cli-collective/google-readonly/releases/download/v#{version}/gro_v#{version}_linux_arm64.tar.gz"
-      sha256 "77cdc68fd09458e8490b4f3e1c46130141b65664e42578e751f65e49b2360066"
+      sha256 "4975ae0903de0889e501b6b5f8d2327adc03d7754601eb4006a88677cbd22ac6"
     end
     on_intel do
       url "https://github.com/open-cli-collective/google-readonly/releases/download/v#{version}/gro_v#{version}_linux_amd64.tar.gz"
-      sha256 "3caeafbc484f1886c32a8b18dc16d314f7e861216e366b228ee052eebe718c40"
+      sha256 "95a811b8355947fdf10034306e3ae0be5a7c1c223a2db3d0984f152a4e74a398"
     end
   end
 
