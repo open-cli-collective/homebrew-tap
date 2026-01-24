@@ -1,8 +1,8 @@
 class KittyThemes < Formula
   desc "Collection of themes for the kitty terminal emulator"
   homepage "https://github.com/open-cli-collective/kitty-themes"
-  url "https://github.com/open-cli-collective/kitty-themes/archive/refs/tags/v2.0.6.tar.gz"
-  sha256 "d45d42461fef176f96b614eb7610beb58bc602977c7a31cf3592b47d0af69d37"
+  url "https://github.com/open-cli-collective/kitty-themes/archive/refs/tags/v2.0.7.tar.gz"
+  sha256 "dd66a90eb5994ba95b1ca87b819b83be0f8ba96e39165046a85a0824add7d951"
   license "MIT"
 
   def install
