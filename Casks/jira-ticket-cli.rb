@@ -3,7 +3,7 @@ cask "jira-ticket-cli" do
   name "jira-ticket-cli"
   desc "Command-line interface for Jira Cloud"
   homepage "https://github.com/open-cli-collective/jira-ticket-cli"
-  version "0.1.16"
+  version "0.1.19"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,35 +13,35 @@ cask "jira-ticket-cli" do
 
   on_macos do
     on_intel do
-      url "https://github.com/open-cli-collective/jira-ticket-cli/releases/download/v#{version}/jira-ticket-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "cc91ffc8d19eb2ce3b977034927d1872f280ebe8d063ac8065cc2eac22e198e5"
+      url "https://github.com/open-cli-collective/jira-ticket-cli/releases/download/v#{version}/jtk_#{version}_darwin_amd64.tar.gz"
+      sha256 "d2f159ff6f1577a3be504d50fc6c7e36c41496e1e948e49c5c690ac349f0113d"
     end
     on_arm do
-      url "https://github.com/open-cli-collective/jira-ticket-cli/releases/download/v#{version}/jira-ticket-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "c0f0927c6544e7c1da83055143c9b8627bb089222c18655e0930e5b712e63a45"
+      url "https://github.com/open-cli-collective/jira-ticket-cli/releases/download/v#{version}/jtk_#{version}_darwin_arm64.tar.gz"
+      sha256 "0cb5d8aa3c1d2c6ae0ab5ff2a23e919d09f084dbeedf9e1465ebb314d927d0ba"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/open-cli-collective/jira-ticket-cli/releases/download/v#{version}/jira-ticket-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "af68e9125367c5d71def69c12fca17f87bbf4ebda3e247864fa0ce983b0ae112"
+      url "https://github.com/open-cli-collective/jira-ticket-cli/releases/download/v#{version}/jtk_#{version}_linux_amd64.tar.gz"
+      sha256 "63350249fa5edefff0c6289dc9bb7b57d840ea2e6c1cce69a353c1f77a850741"
     end
     on_arm do
-      url "https://github.com/open-cli-collective/jira-ticket-cli/releases/download/v#{version}/jira-ticket-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "346f6a29693b39f58d83b4f00f5e974b50ba190fac9469d8e2601e1abe8c1b4b"
+      url "https://github.com/open-cli-collective/jira-ticket-cli/releases/download/v#{version}/jtk_#{version}_linux_arm64.tar.gz"
+      sha256 "66d42c4ca8de586038500834a0811f8b47d76d4b7c90d5d9cb10314123dc21ce"
     end
   end
 
   postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/jira-ticket-cli"]
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/jtk"]
   end
 
   caveats do
     "jira-ticket-cli has been installed."
     ""
     "To configure, run:"
-    "  jira-ticket-cli config set --domain DOMAIN --email EMAIL --token TOKEN"
+    "  jtk config set --domain DOMAIN --email EMAIL --token TOKEN"
     ""
     "Get your API token from: https://id.atlassian.com/manage-profile/security/api-tokens"
   end
