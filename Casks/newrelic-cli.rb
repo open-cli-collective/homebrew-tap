@@ -1,6 +1,5 @@
 cask "newrelic-cli" do
   version "1.0.11"
-  license "MIT"
 
   name "newrelic-cli"
   desc "Command-line interface for New Relic"
