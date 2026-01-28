@@ -1,6 +1,5 @@
 cask "gmail-ro" do
   version "1.0.6"
-  license "MIT"
 
   name "gmail-ro"
   desc "Read-only command-line interface for Gmail"
