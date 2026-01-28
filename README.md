@@ -10,29 +10,49 @@ brew tap open-cli-collective/tap
 
 ## Available Tools
 
-| Tool | Description | Install |
-|------|-------------|---------|
-| [cfl](https://github.com/open-cli-collective/confluence-cli) | CLI for Atlassian Confluence | `brew install --cask cfl` |
-| [gmail-ro](https://github.com/open-cli-collective/gmail-ro) | Read-only CLI for Gmail | `brew install --cask gmail-ro` |
-| [newrelic-cli](https://github.com/open-cli-collective/newrelic-cli) | CLI for New Relic | `brew install --cask newrelic-cli` |
-| [slack-chat-api](https://github.com/open-cli-collective/slack-chat-api) | CLI for Slack | `brew install --cask slack-chat-api` |
+| Tool | Binary | Description | Install |
+|------|--------|-------------|---------|
+| [jira-ticket-cli](https://github.com/open-cli-collective/jira-ticket-cli) | `jtk` | CLI for Jira Cloud | `brew install --cask jtk` |
+| [slack-chat-api](https://github.com/open-cli-collective/slack-chat-api) | `slck` | CLI for Slack | `brew install --cask slck` |
+| [confluence-cli](https://github.com/open-cli-collective/confluence-cli) | `cfl` | CLI for Atlassian Confluence | `brew install --cask cfl` |
+| [newrelic-cli](https://github.com/open-cli-collective/newrelic-cli) | `nrq` | CLI for New Relic | `brew install --cask nrq` |
+| [google-readonly](https://github.com/open-cli-collective/google-readonly) | `gro` | Read-only CLI for Google services | `brew install --cask gro` |
+| [cpm](https://github.com/open-cli-collective/cpm) | `cpm` | Claude plugin manager | `brew install --cask cpm` |
+
+### Legacy Names
+
+For backwards compatibility, these aliases are also available:
+
+| Alias | Points To |
+|-------|-----------|
+| `jira-ticket-cli` | `jtk` |
+| `slack-chat-cli` | `slck` |
+| `newrelic-cli` | `nrq` |
+| `gmail-ro` | Legacy Gmail-only CLI |
+| `google-readonly` | `gro` |
 
 ## Usage
 
-After tapping, install any tool:
+After tapping, install any tool using the short name:
 
 ```bash
+# Jira CLI
+brew install --cask jtk
+
+# Slack CLI
+brew install --cask slck
+
 # Confluence CLI
 brew install --cask cfl
 
-# Gmail (read-only)
-brew install --cask gmail-ro
-
 # New Relic CLI
-brew install --cask newrelic-cli
+brew install --cask nrq
 
-# Slack CLI
-brew install --cask slack-chat-api
+# Google services CLI (Gmail, Calendar, Contacts, Drive)
+brew install --cask gro
+
+# Claude plugin manager
+brew install --cask cpm
 ```
 
 ## Updating
