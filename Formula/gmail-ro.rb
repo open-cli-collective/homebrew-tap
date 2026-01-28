@@ -1,8 +1,10 @@
 class GmailRo < Formula
-  desc "Read-only command-line interface for Gmail"
-  homepage "https://github.com/open-cli-collective/gmail-ro"
+  desc "Read-only command-line interface for Gmail (DEPRECATED - use gro)"
+  homepage "https://github.com/open-cli-collective/google-readonly"
   license "MIT"
   version "1.0.27"
+
+  deprecate! date: "2026-01-28", because: "has been superseded by `gro` (google-readonly)"
 
   on_macos do
     on_arm do
@@ -21,12 +23,14 @@ class GmailRo < Formula
 
   def caveats
     <<~EOS
-      To set up gmail-ro:
-      1. Create OAuth credentials at https://console.cloud.google.com/
-      2. Save credentials to ~/.config/gmail-ro/credentials.json
-      3. Run: gmail-ro search "test" to authenticate
+      ⚠️  gmail-ro is DEPRECATED and will be removed in a future release.
 
-      See https://github.com/open-cli-collective/gmail-ro#setup for detailed instructions.
+      Please migrate to gro (google-readonly):
+        brew uninstall gmail-ro
+        brew install gro
+
+      gro supports Gmail and additional Google services.
+      See https://github.com/open-cli-collective/google-readonly
     EOS
   end
 
