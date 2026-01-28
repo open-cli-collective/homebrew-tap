@@ -9,7 +9,7 @@ cask "jira-ticket-cli" do
     skip "Auto-generated on release."
   end
 
-  binary "jira-ticket-cli"
+  binary "jtk", target: "jira-ticket-cli"
 
   on_macos do
     on_intel do
