@@ -2,8 +2,8 @@
 cask "cpm" do
   name "cpm"
   desc "TUI for managing Claude Code plugins"
-  homepage "https://github.com/open-cli-collective/claude-plugin-manager"
-  version "0.2.1"
+  homepage "https://github.com/open-cli-collective/cpm"
+  version "0.2.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,23 +13,23 @@ cask "cpm" do
 
   on_macos do
     on_intel do
-      url "https://github.com/open-cli-collective/claude-plugin-manager/releases/download/v#{version}/cpm_#{version}_darwin_amd64.tar.gz"
-      sha256 "e1e7ccf1198260267f07fc442f30105e4e1b5eb147a0bf4f3fc0caea5dfa4dab"
+      url "https://github.com/open-cli-collective/cpm/releases/download/v#{version}/cpm_#{version}_darwin_amd64.tar.gz"
+      sha256 "4b75016f41b0f962ea769a7fc6d1eb9f5ffbe4ba1c90eb9971c89c2c10e425a8"
     end
     on_arm do
-      url "https://github.com/open-cli-collective/claude-plugin-manager/releases/download/v#{version}/cpm_#{version}_darwin_arm64.tar.gz"
-      sha256 "8b20ba2d57cf93376806c1f22bfbc03a3e87e2986162d571e27bbb6382ed43e4"
+      url "https://github.com/open-cli-collective/cpm/releases/download/v#{version}/cpm_#{version}_darwin_arm64.tar.gz"
+      sha256 "502195aa1b0c810a88ba54df7aa63fa60d3bc4b1fac8fc2eda743a3ffa266e24"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/open-cli-collective/claude-plugin-manager/releases/download/v#{version}/cpm_#{version}_linux_amd64.tar.gz"
-      sha256 "3d1cbcc2391c821dcf1b52a7b31ec25791e3c46475500b1c169cb2252fd4fc09"
+      url "https://github.com/open-cli-collective/cpm/releases/download/v#{version}/cpm_#{version}_linux_amd64.tar.gz"
+      sha256 "c1d08cbdc152edae3e5a228ea05c7c9af5f8d557defa02f79f209b5fb267582c"
     end
     on_arm do
-      url "https://github.com/open-cli-collective/claude-plugin-manager/releases/download/v#{version}/cpm_#{version}_linux_arm64.tar.gz"
-      sha256 "6a3dd2f81d4f67459d37812cb11725c8664c7df0badbac78ae5cd054492ac51d"
+      url "https://github.com/open-cli-collective/cpm/releases/download/v#{version}/cpm_#{version}_linux_arm64.tar.gz"
+      sha256 "a94cf5e0b43fa230ea2a2e5ae947edb86932247bd948d19bc909c77c0a504194"
     end
   end
 
