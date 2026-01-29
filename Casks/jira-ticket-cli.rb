@@ -3,7 +3,7 @@ cask "jira-ticket-cli" do
   name "jira-ticket-cli"
   desc "Command-line interface for Jira Cloud"
   homepage "https://github.com/open-cli-collective/jira-ticket-cli"
-  version "0.1.21"
+  version "0.1.22"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "jira-ticket-cli" do
   on_macos do
     on_intel do
       url "https://github.com/open-cli-collective/jira-ticket-cli/releases/download/v#{version}/jtk_#{version}_darwin_amd64.tar.gz"
-      sha256 "d5655a0ea95e5f002f14ada1c8543c6bf6a4639d584f7e546f0a7ce284cf0648"
+      sha256 "8c223afd84083610f685c1e18e0ca097d89cdd752837c24dba0f2366e02daf18"
     end
     on_arm do
       url "https://github.com/open-cli-collective/jira-ticket-cli/releases/download/v#{version}/jtk_#{version}_darwin_arm64.tar.gz"
-      sha256 "350fde8d12b9dda2a9388024d2b59a20c057b597f655ae3ab0cf8084c5b74d28"
+      sha256 "0c8590b329547ab298b7d8c11c23b75eb9898070b442aa9d176293efd5995d0b"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/open-cli-collective/jira-ticket-cli/releases/download/v#{version}/jtk_#{version}_linux_amd64.tar.gz"
-      sha256 "4009eaa9814c01521a720921b008cf74e363fabb222ef5ae7a18f7da107584de"
+      sha256 "e6dab95fca513aeea7e4743189eabfa9935a20a1f947ba0a7088aa180183f15d"
     end
     on_arm do
       url "https://github.com/open-cli-collective/jira-ticket-cli/releases/download/v#{version}/jtk_#{version}_linux_arm64.tar.gz"
-      sha256 "f160d8b4d04a97ba26159e75a94b7ff70fd21c4a6015bbf407327880e42be0b9"
+      sha256 "3235d7cc950bfdb88fa232ffff2d931503aa06991f942ad1c2383e8aa919c95d"
     end
   end
 
