@@ -4,10 +4,11 @@
 class SwiftmarkdownGrammars < Formula
   desc "Tree-sitter grammars for SwiftMarkdown syntax highlighting"
   homepage "https://github.com/open-cli-collective/apple-tree-sitter-grammars"
-  version "2.0.44"
+  url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/manifest.json"
+  sha256 "44cd7edf1bc5c2f16b1593c7aebfc14f400e89dfc9ef66bb6c24f15810b4fa2a"
   license "MIT"
 
-  # When updating version, update all resource URLs and sha256 checksums.
+  # When updating version, update url, sha256, and all resource URLs/checksums.
   # Checksums available in bundled-manifest.json from the release.
 
   resource "bash" do
