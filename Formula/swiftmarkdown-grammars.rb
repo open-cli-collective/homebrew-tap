@@ -9,96 +9,96 @@ class SwiftmarkdownGrammars < Formula
   license "MIT"
 
   # When updating version, update url, sha256, and all resource URLs/checksums.
-  # Checksums available in bundled-manifest.json from the release.
+  # Use: curl -sL "<url>" | shasum -a 256
 
   resource "bash" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/bash.tar.gz"
-    sha256 "a076e9ab9f23527428deb5527678d98fd8f77c75a28692d7f441584797413705"
+    sha256 "7a46bd82a35d681a380e76bb30c2bb37bcf5dbd6bd0d37b21900bfbedda5cc16"
   end
 
   resource "c" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/c.tar.gz"
-    sha256 "9f4cbc2385850ee24ce363cd42d976d0f9a2aae5505a66096499b59f2e5d713a"
+    sha256 "513ac7e11cbc1e261ecaf8cafb583be9c4494f2fde18ee61a2303cacf3b80495"
   end
 
   resource "c_sharp" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/c_sharp.tar.gz"
-    sha256 "3eddab51e4868bcd693154d3b73f0c4a727ddf2e40fea4152009185dff846ec1"
+    sha256 "8574b7ea5ca7f6f35f497fd20d11a93484fa7fd48d1c68b0fb59cc4936860b34"
   end
 
   resource "cpp" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/cpp.tar.gz"
-    sha256 "0fbc311a1b1eb1e4bbe84dccececebbb8b4b894598a8781b707df9e9921f3030"
+    sha256 "4615dcb812e0c3fed08d49051e48ff8a3439da8201c6432699951bf9e100d083"
   end
 
   resource "css" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/css.tar.gz"
-    sha256 "26f1034c30cf258652a378102257aa9d997430df35fd70f74832b69056c8cb96"
+    sha256 "190c557fd89d46c785ddc9ccb785ed8a9873beda0dcdca0a683759fb80938a79"
   end
 
   resource "go" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/go.tar.gz"
-    sha256 "843bb1f02b1eb84dde6388044bfba0056aaff9b0fb60ebfab20aad228a6079c3"
+    sha256 "3fd167a6ac6b5315f9774c2af143722a94efe5ce540d93c241f4ec141f3fe389"
   end
 
   resource "html" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/html.tar.gz"
-    sha256 "b73ccf8a99599fbcf14d844e63d11c9c943d96df51ea6c338dfa16571587cf30"
+    sha256 "363f014aff8a271e42177f73bcd728d1a79d512dbaf71e26a4cca1d022930088"
   end
 
   resource "java" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/java.tar.gz"
-    sha256 "10bf58840c2f8a9d9eccf070c4bd1d2b5a8bb8a81793c3bdc9586614fa277edc"
+    sha256 "021eb22ad7c923aca32868a8854d9dad080ee09053bc529f9e8ff787c3fc108c"
   end
 
   resource "javascript" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/javascript.tar.gz"
-    sha256 "4fbf12bc34e58fbcafe81586788ce4dc92389d89fe505ccab3bf7b8333fa3c8e"
+    sha256 "d812734b5004b611708297c6df116f26e3faa098990095326ace3cd119bf5372"
   end
 
   resource "json" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/json.tar.gz"
-    sha256 "27a4fe7fa987826e2abe1d58e53f37db099b1e219950a527596aa0dbeb5d4d7f"
+    sha256 "0fe2b933055e2f11a01eeab08fdf8ae98cbb9e915d8a7e896452784b10992117"
   end
 
   resource "markdown" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/markdown.tar.gz"
-    sha256 "281128bf3a38fbe6f429aaf31552e997e331886a3aa195483bd3669be75c2a0c"
+    sha256 "cd6bd2bc992617bc6852fd64a261a37d9784fe0eaf3c7d13cedaf3dc06532205"
   end
 
   resource "perl" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/perl.tar.gz"
-    sha256 "26b5b86cd17d421b66982d6b20e3f1f34378cd69932439c3250d40e9efc122d0"
+    sha256 "d93ad95806649a6b28d67034f0ab6e457b8a189e6ee403c35ea13202c4efe89c"
   end
 
   resource "php" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/php.tar.gz"
-    sha256 "baf591316776cd04658b5c99cfdb7f4c5b66b52e971d1ce163e601718d02327a"
+    sha256 "7c42ae10f130e376fec5d722024964673c749d6df3a64314370530348dc19398"
   end
 
   resource "python" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/python.tar.gz"
-    sha256 "e9bc45dca970a6e0f8cdb5bb03055ed6723e80dd01bdfc95d33f4bdfe78d0db9"
+    sha256 "2da4b2ad58a24a4a98d593443d8446d1ea387120312385d6d35da9201e169f38"
   end
 
   resource "rust" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/rust.tar.gz"
-    sha256 "3b0a025aad128a4f2ad76e0c03f489ada4594785165f9491450cfbf42ed5605f"
+    sha256 "2717b9b11609977abcbff8f60428548e961f841c95aac4cfd8e84c0871387f26"
   end
 
   resource "swift" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/swift.tar.gz"
-    sha256 "937a53a4d2ef4e1ad3363719a2799c8c979d5af43bd5a173605a23311d8d2590"
+    sha256 "a43a11a0363d9981f67e389383ae8cad53dfd4c1277ad7b57176473c932546ae"
   end
 
   resource "typescript" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/typescript.tar.gz"
-    sha256 "03960e0be4554ffd1c969e2e180ba316acab132f0e35dc7120f6f1aae0351561"
+    sha256 "e08dd954f85c9687a2d84c29831bd9c1d308e7235273f388ef23d92c7b8e33c3"
   end
 
   resource "yaml" do
     url "https://github.com/open-cli-collective/apple-tree-sitter-grammars/releases/download/v2.0.44/yaml.tar.gz"
-    sha256 "038a1c3298223455a30ef2ba4758c4190446851c17a9c861446a546e432c8b8f"
+    sha256 "656ea6e1098bc89f9f76d7100f9f6ce24d4c863ab8eb7528a66e3ec9cc086af1"
   end
 
   def install
