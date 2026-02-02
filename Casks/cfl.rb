@@ -2,8 +2,8 @@
 cask "cfl" do
   name "cfl"
   desc "Command-line interface for Atlassian Confluence"
-  homepage "https://github.com/open-cli-collective/confluence-cli"
-  version "0.9.13"
+  homepage "https://github.com/open-cli-collective/atlassian-cli"
+  version "0.9.100"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,23 +13,23 @@ cask "cfl" do
 
   on_macos do
     on_intel do
-      url "https://github.com/open-cli-collective/confluence-cli/releases/download/v#{version}/cfl_#{version}_darwin_amd64.tar.gz"
-      sha256 "950f1bf93269c86d4e42f7fe212b96572a171f873107f3bc704dee6ae2082c51"
+      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/cfl_#{version}_darwin_amd64.tar.gz"
+      sha256 "941039816030d0aaf098cbb2300849c022085072f2611e0a6b29acd4c4f1a427"
     end
     on_arm do
-      url "https://github.com/open-cli-collective/confluence-cli/releases/download/v#{version}/cfl_#{version}_darwin_arm64.tar.gz"
-      sha256 "95f639bc57607f2f51cde78cd19aca60de7fc2ad11ae3df32e71849b3feaacc2"
+      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/cfl_#{version}_darwin_arm64.tar.gz"
+      sha256 "462f7fe77df64a6401d1d5af4beb1f23ad61292c41e8faf01e4db0706bec65b1"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/open-cli-collective/confluence-cli/releases/download/v#{version}/cfl_#{version}_linux_amd64.tar.gz"
-      sha256 "d3b33abeb3eeca562c105f43706dfac36d00be89880a83b2d1b2b9940344be2d"
+      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/cfl_#{version}_linux_amd64.tar.gz"
+      sha256 "f310eb016fa47491d5bde3f62e0655a2c82369ea57f23cf2a023bf377bc4c284"
     end
     on_arm do
-      url "https://github.com/open-cli-collective/confluence-cli/releases/download/v#{version}/cfl_#{version}_linux_arm64.tar.gz"
-      sha256 "93264dfa0908dd85951dc48c46727227719256a4de0a636880f3cb602299d27e"
+      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/cfl_#{version}_linux_arm64.tar.gz"
+      sha256 "8333d3aada816549854ef95b42771ab00c77ded9fb6f89c332249b8d961b0b1c"
     end
   end
 
