@@ -3,7 +3,7 @@ cask "salesforce-cli" do
   name "salesforce-cli"
   desc "Command-line interface for Salesforce"
   homepage "https://github.com/open-cli-collective/salesforce-cli"
-  version "0.1.6"
+  version "0.1.8"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "salesforce-cli" do
   on_macos do
     on_intel do
       url "https://github.com/open-cli-collective/salesforce-cli/releases/download/v#{version}/sfdc_#{version}_darwin_amd64.tar.gz"
-      sha256 "997c4adf50e07f49ef67b2873c3fc172d5a4571237732997672901f377007695"
+      sha256 "89f26eead73007bc23cda4658212d6c71e4885a4397b6c2ff81131272b37cb31"
     end
     on_arm do
       url "https://github.com/open-cli-collective/salesforce-cli/releases/download/v#{version}/sfdc_#{version}_darwin_arm64.tar.gz"
-      sha256 "ab0e0d509613472000ecd60267c7720774b47bcff328acd71c05801c9e7575aa"
+      sha256 "d69ceab540b08f8b507c4d50878786441b9702151383cb5466ba8c069ade9fa4"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/open-cli-collective/salesforce-cli/releases/download/v#{version}/sfdc_#{version}_linux_amd64.tar.gz"
-      sha256 "cc8d91328a715b955203acff0bd0a07dfa069fdacaa3901e18abdd3be70d3552"
+      sha256 "01ce7d088bd30b570c331cbfd5fb1c25cb25124de97aa57d0cca953c6a60cd59"
     end
     on_arm do
       url "https://github.com/open-cli-collective/salesforce-cli/releases/download/v#{version}/sfdc_#{version}_linux_arm64.tar.gz"
-      sha256 "893b554e52eaa83f0e605c24881603239987d6b55a6de87392a71e6a346c04f5"
+      sha256 "d6711d0a8c566e8025cc80d1f180ae5a92567f836adc49370f6b7d7c4f58b406"
     end
   end
 
