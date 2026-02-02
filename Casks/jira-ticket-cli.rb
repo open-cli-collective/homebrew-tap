@@ -2,34 +2,34 @@
 cask "jira-ticket-cli" do
   name "jira-ticket-cli"
   desc "Command-line interface for Jira Cloud"
-  homepage "https://github.com/open-cli-collective/jira-ticket-cli"
-  version "0.1.25"
+  homepage "https://github.com/open-cli-collective/atlassian-cli"
+  version "0.1.100"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
-  binary "jira-ticket-cli"
+  binary "jtk"
 
   on_macos do
     on_intel do
-      url "https://github.com/open-cli-collective/jira-ticket-cli/releases/download/v#{version}/jtk_#{version}_darwin_amd64.tar.gz"
-      sha256 "60928ac8a992e819b6428c9d1adde86ba55c7f3525963d708046addef18abe78"
+      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/jtk_#{version}_darwin_amd64.tar.gz"
+      sha256 "1698d1197d2d4dab9c2d1ef1061f3a0e0d0ef894c4a39c1930ea1cdcb319867c"
     end
     on_arm do
-      url "https://github.com/open-cli-collective/jira-ticket-cli/releases/download/v#{version}/jtk_#{version}_darwin_arm64.tar.gz"
-      sha256 "d618819ce5e2b74309bebe8f6797182b695322772ea62834a33105c00ecb6de7"
+      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/jtk_#{version}_darwin_arm64.tar.gz"
+      sha256 "2b5c13e0b415189060b1440276f53b19f072d25d9a7ea757701463be804329ea"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/open-cli-collective/jira-ticket-cli/releases/download/v#{version}/jtk_#{version}_linux_amd64.tar.gz"
-      sha256 "28ded4f286e0a1792e109bf0fde6cb6911f523da5b2c6dd19719a0372a56d6ca"
+      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/jtk_#{version}_linux_amd64.tar.gz"
+      sha256 "365c0574c989fe6f59fa5b11d5c14335e4a24d252351c102aaa25911f234f5c0"
     end
     on_arm do
-      url "https://github.com/open-cli-collective/jira-ticket-cli/releases/download/v#{version}/jtk_#{version}_linux_arm64.tar.gz"
-      sha256 "936ddcdb11f4b167f2ca4720465d8e10a5493509d659b50e52b80427b83d438b"
+      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/jtk_#{version}_linux_arm64.tar.gz"
+      sha256 "55f33ca72d23525f08dfa1f7f419f30cc9b69ea7a873ce257ebefa67fce2d8e6"
     end
   end
 
