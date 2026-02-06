@@ -1,6 +1,6 @@
 cask "jtk" do
   name "jtk"
-  desc "[DEPRECATED: use 'brew install jira-ticket-cli' instead] Command-line interface for Jira Cloud"
+  desc "Command-line interface for Jira Cloud"
   homepage "https://github.com/open-cli-collective/atlassian-cli"
   version "0.2.0"
 
@@ -33,11 +33,9 @@ cask "jtk" do
   end
 
   caveats <<~EOS
-    The 'jtk' cask is deprecated. Please switch to 'jira-ticket-cli':
+    To configure, run:
+      jtk config set --domain DOMAIN --email EMAIL --token TOKEN
 
-      brew uninstall jtk
-      brew install open-cli-collective/tap/jira-ticket-cli
-
-    This cask will continue to receive updates but may be removed in the future.
+    Get your API token from: https://id.atlassian.com/manage-profile/security/api-tokens
   EOS
 end
