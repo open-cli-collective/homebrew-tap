@@ -3,7 +3,7 @@ cask "jtk" do
   name "jtk"
   desc "Command-line interface for Jira Cloud"
   homepage "https://github.com/open-cli-collective/atlassian-cli"
-  version "1.0.23"
+  version "1.0.24"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "jtk" do
   on_macos do
     on_intel do
       url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/jtk_#{version}_darwin_amd64.tar.gz"
-      sha256 "2d5b88cde51adc3549e346d33ba453ad8a5598b23bc3a2da1d29b91f25017fd9"
+      sha256 "4c310b1b011801968aeda101457e7bbc104113316e754bb8134f6eca5ed574f1"
     end
     on_arm do
       url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/jtk_#{version}_darwin_arm64.tar.gz"
-      sha256 "e1bd98c51c80b6271f1dd1e0d372ecf77524ae6014969365c60e61a7d557ba8f"
+      sha256 "8844ee8c85249940e28bce5e04b8d1a90abaca9ad0856ca7fd5e84a9a61ebf4d"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/jtk_#{version}_linux_amd64.tar.gz"
-      sha256 "acaaa73762b071b9609553d91aa2baab0364925e346a9f23e226fccb59109226"
+      sha256 "bd03365ec644101b697254c6c57480029280ad8228819ae60a2e3455a15ba67e"
     end
     on_arm do
       url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/jtk_#{version}_linux_arm64.tar.gz"
-      sha256 "6d5c0ddd21ee79e5473d20cb6f3952400c5b0c1028fe2d9bdedf39d9f0e3c853"
+      sha256 "570010021e22d902142b43bac9d393aa9c8419bf5d404f2b56f019deeef48085"
     end
   end
 
