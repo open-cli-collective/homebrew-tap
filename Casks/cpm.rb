@@ -3,7 +3,7 @@ cask "cpm" do
   name "cpm"
   desc "TUI for managing Claude Code plugins"
   homepage "https://github.com/open-cli-collective/cpm"
-  version "0.2.13"
+  version "0.2.14"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "cpm" do
   on_macos do
     on_intel do
       url "https://github.com/open-cli-collective/cpm/releases/download/v#{version}/cpm_#{version}_darwin_amd64.tar.gz"
-      sha256 "1ff10befcc2a66133b1066f987d3d73e1f2b76f4efb706bf7c1b76b95e24d771"
+      sha256 "301866cb75cdccc4ccd8ea8320099f030c53f106728e639dc161acf8c7b5f856"
     end
     on_arm do
       url "https://github.com/open-cli-collective/cpm/releases/download/v#{version}/cpm_#{version}_darwin_arm64.tar.gz"
-      sha256 "d7f8c809bd1ddebfd253c4f3c6f94cce0fe5ad2702b9c650eb9206b1bb7383d3"
+      sha256 "8c13aa8eaf7123251048fc10a67e167d1ddb65d3912ca4936a41ab4d4fb963f3"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/open-cli-collective/cpm/releases/download/v#{version}/cpm_#{version}_linux_amd64.tar.gz"
-      sha256 "87e082f8077d0c631d2966a32a194854ea7533a6d901e9e1aef37e7cf888673b"
+      sha256 "6fceff2a7402a839787182d3ba6946af074a515a164b26deb5d6115381db7bfe"
     end
     on_arm do
       url "https://github.com/open-cli-collective/cpm/releases/download/v#{version}/cpm_#{version}_linux_arm64.tar.gz"
-      sha256 "619aa0b87a9e0f3cc36b7b3c4ab134311da95e1b27ab32e66ad7f3ac38489fa7"
+      sha256 "4012c36b5536a3f15142ff3733db4b4ec16d9a764cdbe442f15d1940c271d65f"
     end
   end
 
