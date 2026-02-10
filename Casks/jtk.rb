@@ -3,7 +3,7 @@ cask "jtk" do
   name "jtk"
   desc "Command-line interface for Jira Cloud"
   homepage "https://github.com/open-cli-collective/atlassian-cli"
-  version "1.0.32"
+  version "1.0.33"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,23 +13,23 @@ cask "jtk" do
 
   on_macos do
     on_intel do
-      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/jtk_#{version}_darwin_amd64.tar.gz"
-      sha256 "e94713a3a0f65dd44fd7c5e5c3c71ffab5c34242a7218a25ebf52f3bbf6dea92"
+      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/jtk-v#{version}/jtk_#{version}_darwin_amd64.tar.gz"
+      sha256 "c26b9c310e4e9ef492ea0e2e322d3da049662c6e66fe580b6c32c42a5ec63a4e"
     end
     on_arm do
-      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/jtk_#{version}_darwin_arm64.tar.gz"
-      sha256 "6c537258668029d6e7e9b1a7c8be6791688d9cd69c43838ef52132abc72bb8f9"
+      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/jtk-v#{version}/jtk_#{version}_darwin_arm64.tar.gz"
+      sha256 "ba150b504bee910a65ec23e01a030b9d98f61fda0d5944fdb922ff24758c990a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/jtk_#{version}_linux_amd64.tar.gz"
-      sha256 "d1303d7f81daaa4348597ef2505285ab9c64904e80ea82e3ce70d10e5311521c"
+      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/jtk-v#{version}/jtk_#{version}_linux_amd64.tar.gz"
+      sha256 "4cb1d914f6d20dd183d055ebf686964142da8b028f5d3561bb6007138d832276"
     end
     on_arm do
-      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/jtk_#{version}_linux_arm64.tar.gz"
-      sha256 "994bf6a353b4d7f3c5cd40585abc78bfa155eabb2aeb1404e8e921f08da0e154"
+      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/jtk-v#{version}/jtk_#{version}_linux_arm64.tar.gz"
+      sha256 "1f96d248aec7dbc9c84faecb14784aa2862f9895e0fafb490fa3302365959dcd"
     end
   end
 
