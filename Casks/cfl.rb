@@ -3,7 +3,7 @@ cask "cfl" do
   name "cfl"
   desc "Command-line interface for Atlassian Confluence"
   homepage "https://github.com/open-cli-collective/atlassian-cli"
-  version "1.0.21"
+  version "1.0.22"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "cfl" do
   on_macos do
     on_intel do
       url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/cfl_#{version}_darwin_amd64.tar.gz"
-      sha256 "1a8ecbded96f49341e09e11fd0cba6feebb767e7c007863a191d268987e020a9"
+      sha256 "6038fa37db8b1d51dbd5751d0dc8da6dd7dbded14224922ca34050a1d2c82928"
     end
     on_arm do
       url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/cfl_#{version}_darwin_arm64.tar.gz"
-      sha256 "4bb75bdfefea0eaa87c982b9e64f8113f234ffe236fcc542f57f5777bbd626e5"
+      sha256 "8583812c6ca85760e1fa96a92794ddeaa06f9aa2f67e95637396938549a29a0d"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/cfl_#{version}_linux_amd64.tar.gz"
-      sha256 "58a0d5209ccab35f4b47384b9bce8f5df98f83f39637fbc9cf4538e667c1440a"
+      sha256 "311189a2437d2848080e931e7e89cc0de8578e15d6f1d14e50f6835debbb0097"
     end
     on_arm do
       url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/cfl_#{version}_linux_arm64.tar.gz"
-      sha256 "ef4682b0d8344b506cf6c03f3b6e41a168ca23ce1de746bdf848d1ea3978a089"
+      sha256 "d2c8b9b5cc210eb4d036e2f8c2230acfd41c5f6784fb2a141f00a296df05fcd8"
     end
   end
 
