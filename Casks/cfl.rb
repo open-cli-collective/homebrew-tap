@@ -3,7 +3,7 @@ cask "cfl" do
   name "cfl"
   desc "Command-line interface for Atlassian Confluence"
   homepage "https://github.com/open-cli-collective/atlassian-cli"
-  version "1.0.22"
+  version "1.0.23"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,23 +13,23 @@ cask "cfl" do
 
   on_macos do
     on_intel do
-      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/cfl_#{version}_darwin_amd64.tar.gz"
-      sha256 "6038fa37db8b1d51dbd5751d0dc8da6dd7dbded14224922ca34050a1d2c82928"
+      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/cfl-v#{version}/cfl_#{version}_darwin_amd64.tar.gz"
+      sha256 "fab1fc1ba4610526de84e4f934ac620edb884f9c7c614656402e95e837676dcb"
     end
     on_arm do
-      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/cfl_#{version}_darwin_arm64.tar.gz"
-      sha256 "8583812c6ca85760e1fa96a92794ddeaa06f9aa2f67e95637396938549a29a0d"
+      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/cfl-v#{version}/cfl_#{version}_darwin_arm64.tar.gz"
+      sha256 "f4cc3acaae130898c1a08d099ce272af79f389096ee7826144ce165edff424ee"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/cfl_#{version}_linux_amd64.tar.gz"
-      sha256 "311189a2437d2848080e931e7e89cc0de8578e15d6f1d14e50f6835debbb0097"
+      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/cfl-v#{version}/cfl_#{version}_linux_amd64.tar.gz"
+      sha256 "a29f05af03e2d647d0409bf12699f243ec855597dab3c877d8ad39aaa23ea1a2"
     end
     on_arm do
-      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/v#{version}/cfl_#{version}_linux_arm64.tar.gz"
-      sha256 "d2c8b9b5cc210eb4d036e2f8c2230acfd41c5f6784fb2a141f00a296df05fcd8"
+      url "https://github.com/open-cli-collective/atlassian-cli/releases/download/cfl-v#{version}/cfl_#{version}_linux_arm64.tar.gz"
+      sha256 "05f2083f332b039714ba4e53a7a808bd1330a592d8f52956142cebb21dc364dc"
     end
   end
 
