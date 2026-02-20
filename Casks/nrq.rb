@@ -2,29 +2,29 @@ cask "nrq" do
   name "nrq"
   desc "Command-line interface for New Relic"
   homepage "https://github.com/open-cli-collective/newrelic-cli"
-  version "1.0.29"
+  version "1.0.30"
 
   binary "nrq"
 
   on_macos do
     on_arm do
       url "https://github.com/open-cli-collective/newrelic-cli/releases/download/v#{version}/nrq_v#{version}_darwin_arm64.tar.gz"
-      sha256 "1a4989513aef748b1b49f931a493bb6761bb54689470f99f89b5191add38851d"
+      sha256 "5a6a0871e2d8fe3b655d218ea6a7acd829eceaadda465e421fad3c1531100c94"
     end
     on_intel do
       url "https://github.com/open-cli-collective/newrelic-cli/releases/download/v#{version}/nrq_v#{version}_darwin_amd64.tar.gz"
-      sha256 "6181fc679e578aae93af9d6b3767b3d4a114c063a7cb54a1c01bdbf52548743b"
+      sha256 "2fe1c51230e308c49899f8fbd8167bd791f27ba66f2d68710e9bf393a034a3e6"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/open-cli-collective/newrelic-cli/releases/download/v#{version}/nrq_v#{version}_linux_arm64.tar.gz"
-      sha256 "ce577aa12b60b82824cfe9a0bf76131993366c8e3c00276cedf2fb2ccdaf06d5"
+      sha256 "9bc5440f71655429ef472d96bc2bcd11654cbd2e138407cf37f19197a3e13de9"
     end
     on_intel do
       url "https://github.com/open-cli-collective/newrelic-cli/releases/download/v#{version}/nrq_v#{version}_linux_amd64.tar.gz"
-      sha256 "7cdd7350da0b9468eaf8d4166f09e52d78fbeefd1e03d54a4b40258cc07629a5"
+      sha256 "81c39a2deb4b221661862101aee046fc0522e6e6de03d1715604c0c65b931c8a"
     end
   end
 
