@@ -2,29 +2,29 @@ cask "slck" do
   name "slck"
   desc "Command-line interface for Slack"
   homepage "https://github.com/open-cli-collective/slack-chat-api"
-  version "3.1.20"
+  version "3.1.28"
 
   binary "slck"
 
   on_macos do
     on_arm do
       url "https://github.com/open-cli-collective/slack-chat-api/releases/download/v#{version}/slck_v#{version}_darwin_arm64.tar.gz"
-      sha256 "3c788e63092bca923fc761929d84bba043ed8a17f21ebea6435bdb796a7652de"
+      sha256 "f76fad6bca1a20c964abe82b3b7a8862323ca13f53740e39e68a10904226d56e"
     end
     on_intel do
       url "https://github.com/open-cli-collective/slack-chat-api/releases/download/v#{version}/slck_v#{version}_darwin_amd64.tar.gz"
-      sha256 "95ec731163eafd129447cb6865caeed9af9ef1d648cc52c18ebdb4d5ca9a37ef"
+      sha256 "c136094a249a9f2115a162888fd706ffbbb09259905697d67ccc680f4d235ac9"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/open-cli-collective/slack-chat-api/releases/download/v#{version}/slck_v#{version}_linux_arm64.tar.gz"
-      sha256 "da192f409252c6b03bf5213f37a647ce50d66dcd56d9284d634abbf5583c4afe"
+      sha256 "9be63b7c4c1447e881303f0ed1c52bfa0b64191330feb4e206564df74cfccbc5"
     end
     on_intel do
       url "https://github.com/open-cli-collective/slack-chat-api/releases/download/v#{version}/slck_v#{version}_linux_amd64.tar.gz"
-      sha256 "2881a65a990ef78a49aace02273486c70966368c43e7687e9c48423dbf36eae6"
+      sha256 "4ec3ad0cfceaf76cd9d9cbf16a94c53992cf7a247a2970713130c5c8822fe446"
     end
   end
 
@@ -33,9 +33,7 @@ cask "slck" do
   end
 
   caveats <<~EOS
-    slck has been installed.
-
-    To configure, run:
+    To configure slck, run:
       slck config set-token
 
     On macOS, your token is stored securely in the system Keychain.
