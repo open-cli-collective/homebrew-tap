@@ -2,29 +2,29 @@ cask "slck" do
   name "slck"
   desc "Command-line interface for Slack"
   homepage "https://github.com/open-cli-collective/slack-chat-api"
-  version "3.1.35"
+  version "3.1.36"
 
   binary "slck"
 
   on_macos do
     on_arm do
       url "https://github.com/open-cli-collective/slack-chat-api/releases/download/v#{version}/slck_v#{version}_darwin_arm64.tar.gz"
-      sha256 "9cefe15d47090febee2ca7f6e68928c8e2fad88d1fb59d217738b2643e5179f6"
+      sha256 "ed61189cf02b94560df21f5762b10fe6be624a6a24721f68c1db75f3e553bdc0"
     end
     on_intel do
       url "https://github.com/open-cli-collective/slack-chat-api/releases/download/v#{version}/slck_v#{version}_darwin_amd64.tar.gz"
-      sha256 "76b6d2f240f8434cda04f68a8d7c94b856cfba0ad8f3740fdda6b8a537149fd2"
+      sha256 "f693917b2d9511ede8bedee68bbc0c01ab1aed31f0eb88f8f0af1e071b06782c"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/open-cli-collective/slack-chat-api/releases/download/v#{version}/slck_v#{version}_linux_arm64.tar.gz"
-      sha256 "826abe624d9393000e2eb7af54062241e6e66651239b75ce58475dd58078d637"
+      sha256 "5ce24960b426f4794caf76f138512933eaf285439833eaa0dedc1775c2c607c5"
     end
     on_intel do
       url "https://github.com/open-cli-collective/slack-chat-api/releases/download/v#{version}/slck_v#{version}_linux_amd64.tar.gz"
-      sha256 "a56e8f751b627000ab6322952c29bb373f685d7626d9ee5a5f3b85261371fd47"
+      sha256 "8f75b84a72b2a23195357e128b3897d3a5f9dcfd0cc1193d65cf99559822c26d"
     end
   end
 
