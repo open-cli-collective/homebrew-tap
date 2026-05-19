@@ -2,16 +2,16 @@ class NewrelicCli < Formula
   desc "Command-line interface for New Relic"
   homepage "https://github.com/open-cli-collective/newrelic-cli"
   license "MIT"
-  version "1.0.37"
+  version "1.0.38"
 
   on_macos do
     on_arm do
       url "https://github.com/open-cli-collective/newrelic-cli/releases/download/v#{version}/nrq_v#{version}_darwin_arm64.tar.gz"
-      sha256 "103ab509a53d3794600be65c8f62243920bc918a6b3174f14ab89db97b71f6f8"
+      sha256 "2737fba77b8fadbf20098b960fc75bb9a111a1666ad0548fe978ca41573f0f7c"
     end
     on_intel do
       url "https://github.com/open-cli-collective/newrelic-cli/releases/download/v#{version}/nrq_v#{version}_darwin_amd64.tar.gz"
-      sha256 "7e68dba3ba6d3a9dddaa860c3d9e451e855e46003c9706625f13ee47f5e17408"
+      sha256 "36c8a75f94d34c010349cf93d442980e1e620ed5b789e91920838f02a2a98b42"
     end
   end
 
