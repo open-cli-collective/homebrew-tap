@@ -1,42 +1,43 @@
 cask "newrelic-cli" do
-  version "1.0.11"
-
-  name "newrelic-cli"
+  name "nrq"
   desc "Command-line interface for New Relic"
   homepage "https://github.com/open-cli-collective/newrelic-cli"
+  version "1.0.47"
 
-  binary "newrelic-cli"
+  binary "nrq"
 
   on_macos do
     on_arm do
-      url "https://github.com/open-cli-collective/newrelic-cli/releases/download/v#{version}/newrelic-cli_v#{version}_darwin_arm64.tar.gz"
-      sha256 "7956d5a2bd5193df5c5954e490857447b166e6aba243d14f05c8773fa47510af"
+      url "https://github.com/open-cli-collective/newrelic-cli/releases/download/v#{version}/nrq_v#{version}_darwin_arm64.tar.gz"
+      sha256 "a9fbe04e9321bd04cc79db81d7c410131ab694fe0f4b358f2c6f48bbc2439400"
     end
     on_intel do
-      url "https://github.com/open-cli-collective/newrelic-cli/releases/download/v#{version}/newrelic-cli_v#{version}_darwin_amd64.tar.gz"
-      sha256 "d6bf840be6e4a6d0987e6578f48efea1e2be8faa4b412ecaf1678bbfd9b873b9"
+      url "https://github.com/open-cli-collective/newrelic-cli/releases/download/v#{version}/nrq_v#{version}_darwin_amd64.tar.gz"
+      sha256 "ac506681a6b0b754d26cb83c9c831e4fe583c7780c0ee1509a1c3d2caa5c4630"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/open-cli-collective/newrelic-cli/releases/download/v#{version}/newrelic-cli_v#{version}_linux_arm64.tar.gz"
-      sha256 "c4c07b9a8c1526016851fa36c922f43c76b498f7f1301b0ddcd09a93403e216e"
+      url "https://github.com/open-cli-collective/newrelic-cli/releases/download/v#{version}/nrq_v#{version}_linux_arm64.tar.gz"
+      sha256 "ff639240ff334f52375b796cf362170c853eb061fffabbc5d21327429ddabbf6"
     end
     on_intel do
-      url "https://github.com/open-cli-collective/newrelic-cli/releases/download/v#{version}/newrelic-cli_v#{version}_linux_amd64.tar.gz"
-      sha256 "2e6c2bbf498edf3f772ae343fea3149e2dbd42af7090d1f41ebddb645874126b"
+      url "https://github.com/open-cli-collective/newrelic-cli/releases/download/v#{version}/nrq_v#{version}_linux_amd64.tar.gz"
+      sha256 "958d885c68282c8bd95c3a22697a9753aab6631935aba5e816f740276c4d1109"
     end
   end
 
   postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/newrelic-cli"]
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/nrq"]
   end
 
   caveats <<~EOS
-    To configure newrelic-cli, run:
-      newrelic-cli config set-api-key
-      newrelic-cli config set-account-id
+    nrq has been installed.
+
+    To configure, run:
+      nrq config set-api-key
+      nrq config set-account-id
 
     Or set environment variables:
       export NEWRELIC_API_KEY=NRAK-xxx
