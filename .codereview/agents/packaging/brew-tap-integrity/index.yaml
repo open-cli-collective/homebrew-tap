@@ -1,0 +1,13 @@
+name: brew-tap-integrity
+description: Reviews Homebrew tap changes for generated package integrity and release coherence.
+model_tier: small
+effort: low
+file_globs:
+  - Casks/**/*.rb
+  - Formula/**/*.rb
+  - README*
+  - .github/workflows/**/*
+  - .codereview/**
+applies_when:
+  - Homebrew tap packaging files, generated casks or formulae, release metadata, or codereview reviewer definitions change.
+needs_full_file_content: false
