@@ -1,6 +1,6 @@
 cask "retune" do
-  version "0.3.2"
-  sha256 "0b0a21081ee378dc4ceffac1efb40d730d0e7e5a6e59c7aaf6eb388d37d9060f"
+  version "0.3.3"
+  sha256 "854ce5e4d563baa18e67812b9db5fdb0a6f58d52e9d342219fa914fdfd578e19"
 
   url "https://github.com/open-cli-collective/Retune/releases/download/v#{version}/Retune-#{version}-aarch64.tar.gz"
   name "Retune"
