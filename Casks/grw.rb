@@ -4,21 +4,21 @@ cask "grw" do
 
   on_macos do
     on_arm do
-      sha256 "06afa2f434b8a2b7525837e17e2aaf6835e034b7c879bda6e576093e16ae2aca"
+      sha256 "f99b9dd80673b19cb07b43350e4bcd72901bc0abc51b1c8594df6adc4494ecaa"
       url "https://github.com/open-cli-collective/google-cli/releases/download/v#{version}/grw_v#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "98151fe4116d917669906b2b7ce7440133fb1551e44031ad2c863b263d9b1516"
+      sha256 "db6febafd5465a1823b02fb3bb90160015bac2a7c4047526481b2555ece3ceba"
       url "https://github.com/open-cli-collective/google-cli/releases/download/v#{version}/grw_v#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "44e8923023ea87cd191c90ea399a2c9a0f9955642e02d2380e51c5c384e08039"
+      sha256 "858a9d3d8dc679f8ec09f9e209c394483d509bf6ba088fa9295419e6971a8795"
       url "https://github.com/open-cli-collective/google-cli/releases/download/v#{version}/grw_v#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "5a259b3046f01c5076bda9c0278fd73a1c13daff7fb9c3be9005a858ab1b608a"
+      sha256 "5ba0aa03c744dbcc4bfcc77fecd41117be5c282a9965603168ad587bf2087b6a"
       url "https://github.com/open-cli-collective/google-cli/releases/download/v#{version}/grw_v#{version}_linux_amd64.tar.gz"
     end
   end
