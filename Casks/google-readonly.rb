@@ -4,21 +4,21 @@ cask "google-readonly" do
 
   on_macos do
     on_arm do
-      sha256 "44ad7cdb9097d51c7871e16ae9f364652d5d08d774e286825632555e2473b862"
+      sha256 "3e00eee4656472366eb641db0580a9f64fb296bd7ca8a35aeea86c78c5164a20"
       url "https://github.com/open-cli-collective/google-cli/releases/download/v#{version}/gro_v#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "adda5f0acc76e6fba7f130c2bf223c854058f81ab982519372bd41884e5b19b0"
+      sha256 "ee952614da3a2f928c730eb1ecbd24003fecee7a25c2fbec8d465bd361b42209"
       url "https://github.com/open-cli-collective/google-cli/releases/download/v#{version}/gro_v#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "f4e4fdfb402891cfbff18f4f60d31e74bbf0aea8057b5da3526479c8c45f259e"
+      sha256 "934ab8a2c5aaf7ce0b231efe9b7e9c70087798a8ea903755addd73f051ff4492"
       url "https://github.com/open-cli-collective/google-cli/releases/download/v#{version}/gro_v#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "bafd2035a72f4c9dac94475e295e1518d09982f2a5258f42f311930e2362bb7c"
+      sha256 "39a8f1b11db8cc9a6d074a99d97d27f2d58284409bc79efe06fcd64e12819e6a"
       url "https://github.com/open-cli-collective/google-cli/releases/download/v#{version}/gro_v#{version}_linux_amd64.tar.gz"
     end
   end
