@@ -33,8 +33,8 @@ cask "slck" do
 
   binary "slck"
 
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/slck"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "slck"], base: :staged_path
   end
 
   # No zap stanza required

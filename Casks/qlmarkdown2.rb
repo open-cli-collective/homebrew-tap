@@ -16,10 +16,11 @@ cask "qlmarkdown2" do
 
   app "QLMarkdown.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-      args: ["-cr", "#{appdir}/QLMarkdown.app"],
-      sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-cr", "QLMarkdown.app"],
+        base: :appdir,
+        sudo: false
   end
 
   zap trash: [

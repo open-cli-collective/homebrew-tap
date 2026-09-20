@@ -33,8 +33,8 @@ cask "jira-ticket-cli" do
 
   binary "jtk"
 
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/jtk"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "jtk"], base: :staged_path
   end
 
   # No zap stanza required
