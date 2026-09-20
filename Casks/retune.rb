@@ -1,11 +1,13 @@
 cask "retune" do
-  version "0.3.15"
-  sha256 "633595bfa8fa62407fa07ec14ad7397a65d834f48fdf8d10a7ce8db53058bd48"
+  version "0.3.16"
+  sha256 "6c401b6a5350e51ec7fb36f3a6b16675a5ff34a16c1c6bb4389a94bf29042499"
 
   url "https://github.com/open-cli-collective/Retune/releases/download/v#{version}/Retune-#{version}-aarch64.zip"
   name "Retune"
   desc "Album-first music library for local audio and Spotify"
   homepage "https://github.com/open-cli-collective/Retune"
+
+  depends_on macos: ">= :sequoia"
 
   app "Retune.app"
 
