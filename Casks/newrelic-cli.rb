@@ -34,8 +34,8 @@ cask "newrelic-cli" do
 
   binary "nrq"
 
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/nrq"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "nrq"], base: :staged_path
   end
 
   # No zap stanza required

@@ -16,10 +16,11 @@ cask "swiftmarkdown" do
 
   app "SwiftMarkdown.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-      args: ["-cr", "#{appdir}/SwiftMarkdown.app"],
-      sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-cr", "SwiftMarkdown.app"],
+        base: :appdir,
+        sudo: false
   end
 
   zap trash: [
