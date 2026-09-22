@@ -7,7 +7,7 @@ cask "retune" do
   desc "Album-first music library for local audio and Spotify"
   homepage "https://github.com/open-cli-collective/Retune"
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "Retune.app"
 

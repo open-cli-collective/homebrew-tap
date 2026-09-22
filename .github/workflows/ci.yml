@@ -21,4 +21,4 @@ jobs:
             exit 1
           fi
       - name: Check Homebrew style
-        run: brew style --only-cops Cask/InstallSteps Casks/*.rb
+        run: brew style --only-cops Cask/InstallSteps,Homebrew/OSDependsOn Casks/*.rb
