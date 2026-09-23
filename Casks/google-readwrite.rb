@@ -34,7 +34,7 @@ cask "google-readwrite" do
   binary "grw"
 
   postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "grw"], base: :staged_path
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/grw"]
   end
 
   # No zap stanza required
