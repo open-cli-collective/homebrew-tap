@@ -34,7 +34,7 @@ cask "slack-chat-cli" do
   binary "slck"
 
   postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "slck"], base: :staged_path
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/slck"]
   end
 
   # No zap stanza required

@@ -33,8 +33,8 @@ cask "codereview-cli" do
 
   binary "cr"
 
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/cr"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/cr"]
   end
 
   # No zap stanza required

@@ -35,7 +35,7 @@ cask "hubspot-cli" do
   binary "hspt"
 
   postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "hspt"], base: :staged_path
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/hspt"]
   end
 
   # No zap stanza required

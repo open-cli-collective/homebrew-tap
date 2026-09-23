@@ -35,7 +35,7 @@ cask "cfl" do
   binary "cfl"
 
   postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "cfl"], base: :staged_path
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/cfl"]
   end
 
   # No zap stanza required

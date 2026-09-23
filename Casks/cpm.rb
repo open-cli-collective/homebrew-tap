@@ -29,7 +29,7 @@ cask "cpm" do
   binary "cpm"
 
   postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "cpm"], base: :staged_path
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/cpm"]
   end
 
   # No zap stanza required
