@@ -35,7 +35,7 @@ cask "nrq" do
   binary "nrq"
 
   postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "nrq"], base: :staged_path
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/nrq"]
   end
 
   # No zap stanza required

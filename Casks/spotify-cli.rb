@@ -35,7 +35,7 @@ cask "spotify-cli" do
   binary "sptfy"
 
   postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "sptfy"], base: :staged_path
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/sptfy"]
   end
 
   # No zap stanza required

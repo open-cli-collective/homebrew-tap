@@ -34,7 +34,7 @@ cask "salesforce-cli" do
   end
 
   postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "sfdc"], base: :staged_path
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/sfdc"]
   end
 
   caveats do
