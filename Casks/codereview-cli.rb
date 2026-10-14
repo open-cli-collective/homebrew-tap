@@ -35,8 +35,7 @@ cask "codereview-cli" do
 
   postflight_steps do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/cr"]
-    result = system_command "{{staged_path}}/cr", args: ["catalog", "update"], must_succeed: false
-    opoo "cr catalog update failed; run `cr catalog update` to refresh the model catalog." unless result&.success?
+    run "{{staged_path}}/cr", args: ["catalog", "update"], must_succeed: false
   end
 
   # No zap stanza required
@@ -44,6 +43,8 @@ cask "codereview-cli" do
   caveats <<~EOS
     To configure cr, follow the setup examples in the README:
       https://github.com/open-cli-collective/codereview-cli#authentication-and-setup
+
+    If the catalog refresh fails, run `cr catalog update` after installation.
 
     Secrets are stored in the OS credential store. They are never written to
     config.yml.
