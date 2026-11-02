@@ -11,8 +11,12 @@ cask "retune" do
 
   app "Retune.app"
 
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Retune.app"]
+  end
+
   caveats <<~EOS
     Retune uses the Open CLI Collective's self-signed certificate and is not Apple-notarized.
-    After Homebrew verifies the cask checksum, try to open Retune, then choose Open Anyway in Privacy & Security.
+    Homebrew removes quarantine from Retune after verifying the cask checksum on install and upgrade.
   EOS
 end
